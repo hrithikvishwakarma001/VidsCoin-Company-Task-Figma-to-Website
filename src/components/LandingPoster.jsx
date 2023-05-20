@@ -17,7 +17,7 @@ const LandingPoster = () => {
 			flexDirection={{ base: "column", md: "row" }}
 			alignItems='center'
 			px={5}
-		>
+			pt='5'>
 			<Box
 				ml={{ base: "0", md: "'70'", lg: "70" }}
 				w={{ base: "100%", md: "50%", lg: "50%" }}>
@@ -114,16 +114,14 @@ const LandingPoster = () => {
 					isVertical={true}
 					bg={"root.gray"}
 					pos={"absolute"}
-					top={"52%"}
+					top={{ base: "40%", md: "52%", lg: "52%" }}
 					left={"82%"}
 					spacing={"3rem"}
 					w='50px'
 					zIndex={5}
 				/>
 
-				<Box zIndex={2} position={"relative"}
-				
-				>
+				<Box zIndex={2} position={"relative"}>
 					<Image
 						src='/landing/eye.png'
 						alt='----'
@@ -140,8 +138,7 @@ const LandingPoster = () => {
 						left={"36%"}
 						w='10%'
 					/>
-					<Image src='/landing/poster.png' alt='----' 
-					/>
+					<Image src='/landing/poster.png' alt='----' />
 					<HStack
 						position={"absolute"}
 						top={"45%"}

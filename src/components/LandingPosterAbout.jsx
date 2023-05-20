@@ -107,7 +107,7 @@ const LandingPosterAbout = () => {
 						w='10%'
 					/>
 					<Image
-						transform={"rotate(5deg)"}
+						transform={"rotate(8deg)"}
 						src='/about us/strip-1.png'
 						alt='----'
 						position={"absolute"}
@@ -123,7 +123,7 @@ const LandingPosterAbout = () => {
 						alt='----'
 						position={"absolute"}
 						top={"35%"}
-						left={"10%"}
+						left={"15%"}
 						w='100%'
 						zIndex={10}
 					/>

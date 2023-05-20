@@ -9,6 +9,7 @@ import {
 	useDisclosure,
 	HStack,
 	Circle,
+	Image,
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import { Link } from "react-router-dom";
@@ -51,11 +52,12 @@ export default function Navbar() {
 							Login or Register
 						</Button>
 					) : (
-						<Text
-							textAlign={{ base: "center", md: "left" }}
-							fontFamily={"heading"}>
-							Logo
-						</Text>
+						<Image
+							src='/logo.png'
+							alt='logo'
+							width={{ base: "88px", md: "120px" }}
+							mt='2'
+						/>
 					)}
 				</Flex>
 
@@ -100,7 +102,7 @@ export default function Navbar() {
 			</Flex>
 
 			<Collapse in={isOpen} animateOpacity>
-				<MobileNav onToggle={()=>onToggle()} />
+				<MobileNav onToggle={() => onToggle()} />
 			</Collapse>
 		</Box>
 	);
