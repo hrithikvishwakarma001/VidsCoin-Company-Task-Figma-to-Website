@@ -171,10 +171,11 @@ const LandingCards = () => {
 
 							<Flex justifyContent={"center"} w='100%'>
 								<Image
-									src='/landing/vector-2.png'
+									src='/landing/vector-50.png'
 									w='70%'
 									position={"absolute"}
 									bottom={"-15%"}
+									filter={'contrast(0.7)'}
 								/>
 							</Flex>
 						</Flex>

@@ -1,5 +1,4 @@
 import { Box, Image, Text, VStack } from "@chakra-ui/react";
-import React from "react";
 import CustomBotton from "../utils/CustomBotton";
 
 const LandingCreator = () => {
