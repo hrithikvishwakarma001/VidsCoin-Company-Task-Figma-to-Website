@@ -204,40 +204,44 @@ const LandingCreator = () => {
 								top={"6%"}
 								left={"-10%"}
 							/>
-							<Image
-								src='/landing/poster-2.png'
-								alt='----'
-								position={"absolute"}
-								top={"-480"}
-								right={"-1%"}
-								zIndex={5}
-								w={{ base: "70%", md: "50%", lg: "50%" }}
-								display={{
-									base: "none",
-									md: "block",
-									lg: "block",
-								}}
-							/>
 						</Box>
 					</VStack>
-					<Image
-						src='/landing/vector-4.png'
-						position={"absolute"}
-						top='17%'
-						right='12%'
-						w={"50px"}
-						zIndex={5}
-						display={{ base: "none", md: "block" }}
-					/>
-					<Image
-						src='/landing/vector-4.png'
-						position={"absolute"}
-						top='17%'
-						right='18%'
-						w={"50px"}
-						zIndex={5}
-						display={{ base: "none", md: "block" }}
-					/>
+					<Box
+						position='relative'
+						// border='1px solid red'
+					>
+						<Image
+							src='/landing/poster-2.png'
+							alt='----'
+							position={"absolute"}
+							bottom={"0"}
+							right={"-1%"}
+							zIndex={5}
+							// display={{
+							// 	base: "none",
+							// 	md: "none",
+							// 	lg: "inline-block",
+							// }}
+						/>
+						<Image
+							src='/landing/vector-4.png'
+							position={"absolute"}
+							top={{ base: "-15.8rem", md: "-31rem" }}
+							right={{ base: "36%", md: "16.5%" }}
+							w={{ base: "25px", md: "8%" }}
+							zIndex={5}
+							display={{ base: "none", md: "block" }}
+						/>
+						{/* <Image
+							src='/landing/vector-4.png'
+							position={"absolute"}
+							top={{ base: "-15.8rem", md: "-30rem" }}
+							right={{ base: "26%", md: "11.8%" }}
+							w={{ base: "25px", md: "50px" }}
+							zIndex={5}
+							display={{ base: "none", md: "block" }}
+						/> */}
+					</Box>
 				</Box>
 			</Box>
 		</>

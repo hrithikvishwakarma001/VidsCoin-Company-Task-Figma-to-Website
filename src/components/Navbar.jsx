@@ -55,7 +55,7 @@ export default function Navbar() {
 						<Image
 							src='/logo.png'
 							alt='logo'
-							width={{ base: "88px", md: "120px" }}
+							width={{ base: "80px", md: "110px" }}
 							mt='2'
 						/>
 					)}
@@ -68,7 +68,10 @@ export default function Navbar() {
 					spacing={6}
 					// border={"1px solid red"}
 				>
-					<Flex display={{ base: "none", md: "flex" }} ml={10}>
+					<Flex display={{ base: "none", md: "flex" }} ml={5}
+						// border={"1px solid blue"}
+						w="100%"
+					>
 						<DesktopNav />
 					</Flex>
 					<Button
@@ -114,10 +117,10 @@ const DesktopNav = () => {
 	return (
 		<Stack
 			direction={"row"}
-			spacing={8}
+			spacing={10}
 			align={"center"}
 			// border={"1px solid red"}
-			ml={20}>
+			ml={'8rem'}>
 			{NAV_ITEMS.map((navItem) => (
 				<Box
 					key={navItem.label}
